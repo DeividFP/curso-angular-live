@@ -1,0 +1,6 @@
+<div>
+    <h1>Mi nombre es: {{ nombre }} </h1>
+    <button (click) = "alertarNombre()" >Alertar nombre</button>
+    <h2 [hidden] = "ocultar"  > Mi nuevo nombre es: {{nuevoNombre}} </h2>
+    <input type="text" placeholder="Nuevo nombre" [(ngModel)]="nuevoNombre">
+</div>
