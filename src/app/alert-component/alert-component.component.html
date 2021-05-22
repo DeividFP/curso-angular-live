@@ -1,0 +1,25 @@
+<div>
+    <div>
+        <input type="text" placeholder="Introduce tu nombre" [(ngModel)]="newName">
+    </div>
+    <div>
+        <button (click)="alertName()" >Aceptar</button>
+    </div>
+</div>
+<hr>
+<div>
+    <div>
+        <button (click) = "isHidden('1')" > {{ ocultar1?"Ver":"Ocultar" }} imagen 1</button>
+        <img [hidden] = "ocultar1" src="https://www.ambienteysociedad.org.co/wp-content/uploads/2018/08/Los-bosques-son-esenciales-para-los-ODS.jpg" alt="img1">
+    </div>
+    <div>
+        <button (click) = "isHidden('2')">{{ ocultar2?"Ver":"Ocultar" }} imagen 2</button>
+        <br>
+        <img [hidden] = "ocultar2" src="https://viajarporescocia.com/contenido/uploads/visita-guiada-entrada-al-castillo-de-edimburgo.jpg" alt="img2">
+    </div>
+    <div>
+        <button (click) = "isHidden('3')">{{ ocultar3?"Ver":"Ocultar" }} imagen 3</button>
+        <br>
+        <img [hidden] = "ocultar3" src="https://cdn-1.motorsport.com/images/amp/6gpWEkn0/s6/sergio-perez-red-bull-racing-1.jpg" alt="img3">
+    </div>
+</div>
